@@ -1,0 +1,10 @@
+{
+  "title": "Vuetify Strapi dashboard",
+  "url": "vuetify-dashboard.com",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "savyir/vuetify-strapi-dashboard",
+  "twitter": "@ehsan_"
+}
