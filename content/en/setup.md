@@ -5,38 +5,33 @@ position: 2
 category: Guide
 ---
 
-Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossary/configuration-modules) for more information about installing and using modules in Nuxt.js.
-
 ## Installation
 
-Add `@nuxtjs/xxx` dependency to your project:
+Add `vuetify-strapi-dashboard` dependency to your project:
 
 <code-group>
   <code-block label="Yarn" active>
 
   ```bash
-  yarn add @nuxtjs/xxx
+  yarn add vuetify-strapi-dashboard
   ```
 
   </code-block>
   <code-block label="NPM">
 
   ```bash
-  npm install @nuxtjs/xxx
+  npm install vuetify-strapi-dashboard
   ```
 
   </code-block>
 </code-group>
 
-Then, add `@nuxtjs/xxx` to the `modules` section of `nuxt.config.js`:
+Then, add `vuetify-strapi-dashboard` to the `modules` section of `nuxt.config.js`:
 
 ```js[nuxt.config.js]
 {
   modules: [
-    '@nuxtjs/xxx'
+    'vuetify-strapi-dashboard'
   ],
-  xxx: {
-    // Options
-  }
 }
 ```
