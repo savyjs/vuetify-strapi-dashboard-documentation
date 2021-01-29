@@ -10,8 +10,7 @@ features:
   - ...
 ---
 # Advanced Vuetify Dashboard 
-
-[Module]() for [NuxtJS](https://nuxtjs.org).
+[Strapi](https://strapi.io) is a powerful Headless CMS, but it is designed for developers not your customers. you may need a better dashboard for your clients, an advanced dashboard matched with strapi. [Vuetify](vuetifyjs.com) is a greate UI kit for Vuejs, but it is a toolkit. we created a module for nuxtjs 
 
 <alert type="info">
 

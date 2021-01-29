@@ -2,8 +2,8 @@
   "title": "Vuetify Strapi dashboard",
   "url": "vuetify-dashboard.com",
   "logo": {
-    "light": "/logo-light.svg",
-    "dark": "/logo-dark.svg"
+    "light": "/text-logo.png",
+    "dark": "/text-logo.png"
   },
   "github": "savyir/vuetify-strapi-dashboard",
   "twitter": "@ehsan_"
