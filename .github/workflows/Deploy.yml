@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: ls && pwd
+        script:  cd /home/vsd/docs/ && git pull origin master && pm2 stop vsdDocsFront && yarn generate && pm2 start vsdDocsFront
