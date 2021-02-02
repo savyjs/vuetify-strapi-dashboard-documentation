@@ -4,13 +4,16 @@ description: ''
 position: 1
 category: ''
 features:
-  - Advanced CRUD matched with Strapi 
-  - Set up crud Table, Froms, Show Pages with 2 json files
-  - Menu, Sidebar and beautiful loaders
-  - ...
+  - advanced CRUD matched with Strapi 
+  - set up crud Table, Froms, Show Pages with 2 json files
+  - menu, Sidebar and beautiful loaders
+  - match with custom APIs easily
 ---
-# Advanced Vuetify Dashboard 
-[Strapi](https://strapi.io) is a powerful Headless CMS, but it is designed for developers not your customers. you may need a better dashboard for your clients, an advanced dashboard matched with strapi. [Vuetify](vuetifyjs.com) is a greate UI kit for Vuejs, but it is a toolkit. we created a module for nuxtjs 
+[![nuxt vuetify strapi dashboard](/banner.png)](https://vsd.savy.ir)
+
+# Introduction - Advanced Vuetify Dashboard 
+[Strapi](https://strapi.io) is a powerful Headless CMS, but it is designed for developers. your customers need a better UI. [Vuetify](vuetifyjs.com) is a greate UI kit to create beautiful dashboard systems.
+VSD (Vuetify Strapi Dashboard) is a set of UI components for creating beautiful a dashboard or CRM for your customers.
 
 <alert type="info">
 
@@ -19,5 +22,3 @@ features:
 ## Features
 
 <list :items="features"></list>
-
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>

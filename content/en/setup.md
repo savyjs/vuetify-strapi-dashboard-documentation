@@ -5,6 +5,15 @@ position: 2
 category: Guide
 ---
 
+## Requirements
+
+- [Nuxtjs](https://vnuxtjs.org)
+- [Vuetify module](https://vuetify.nuxtjs.org) 
+- [Axios module](https://axios.nuxtjs.org)
+
+<alert>
+you should install and config vuetify and axios before using this module.
+</alert>
 ## Installation
 
 Add `vuetify-strapi-dashboard` dependency to your project:
@@ -26,7 +35,7 @@ Add `vuetify-strapi-dashboard` dependency to your project:
   </code-block>
 </code-group>
 
-Then, add `vuetify-strapi-dashboard` to the `modules` section of `nuxt.config.js`:
+Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 
 ```js[nuxt.config.js]
 {
