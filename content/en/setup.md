@@ -40,7 +40,44 @@ Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 ```js[nuxt.config.js]
 {
   modules: [
-    'vuetify-strapi-dashboard'
+    ['vuetify-strapi-dashboard'
+      apiHelper: require('./modules/vsd/api').default,
+      validations: require('./modules/vsd/validations').default,
+      config: require('./modules/vsd/config').default,
+      settings: require('./modules/vsd/settings').default,
+      menu: require('./modules/vsd/menu').default
+    ]
   ],
 }
+```
+
+## auth and axios config
+recommended config for axios and auth:
+```js[nuxt.config.js]
+axios: {
+    changeOrigin: true,
+    baseURL: 'http://your-api-server-here',
+    debug: false
+  },
+  auth: {
+    strategies: {
+      admin: {
+        _scheme: 'local',
+        endpoints: {
+          login: {url: _.get(process, 'env.LOGIN_URL', '/auth/local'), method: 'post', propertyName: 'jwt'},
+          logout: {url: '/auth/logout', method: 'post'},
+          user: {url: '/users/me', method: 'get'}
+        },
+        tokenRequired: true,
+        tokenType: 'bearer',
+        autoFetchUser: true
+      }
+    },
+    redirect: {
+      login: '/admin/auth',
+      logout: '/admin/system/profile/logout',
+      callback: '/admin/login',
+      home: '/admin'
+    }
+  },
 ```
