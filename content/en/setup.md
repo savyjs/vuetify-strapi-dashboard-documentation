@@ -14,7 +14,8 @@ category: Guide
 <alert>
 you should install and config vuetify and axios before using this module.
 </alert>
-## Installation
+
+##  Installation
 
 Add `vuetify-strapi-dashboard` dependency to your project:
 
@@ -41,6 +42,7 @@ Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 {
   modules: [
     ['vuetify-strapi-dashboard'
+      rtl: true, // default: i18n.dir or false
       apiHelper: require('./modules/vsd/api').default,
       validations: require('./modules/vsd/validations').default,
       config: require('./modules/vsd/config').default,
