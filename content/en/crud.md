@@ -1,11 +1,11 @@
 ---
-title: CRUD Configuration
+title: CRUD
 description: ''
-position: 4
+position: 3
 category: Guide
 ---
 
-## Inreoduction
+## Introduction
 
 because each crud has more than 1 page, it is better to use a shared config file for them. this file includes basic properties like name, api resource url, icon and title.
 

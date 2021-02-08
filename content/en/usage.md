@@ -1,8 +1,8 @@
 ---
 title: Usage
 description: ''
-position: 3
-category: Guide
+position: 2
+category: Setup
 ---
 
 ## Basic CRUD

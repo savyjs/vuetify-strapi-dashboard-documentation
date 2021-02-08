@@ -1,8 +1,8 @@
 ---
 title: Setup
 description: ''
-position: 2
-category: Guide
+position: 1
+category: Setup
 ---
 
 ## Requirements
