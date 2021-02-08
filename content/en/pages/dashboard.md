@@ -1,52 +1,28 @@
 ---
-title: Auth Pages
+title: Dashboard 
 description: ''
-position: 1
+position: 2
 category: 'Pages'
 ---
 ## layouts
-there are 2 built-in layouts:
+there are 2 layouts. the first one is [```vsdAuth```](/pages/auth) and second is ```vsd```.
 
-#### 1- vsdDashboard
-```vsdDashboard``` layout contains all necessary components like menu, access controller, auth middleware, snackbar, sweetAlert, etc.
+#### default layout
+```vsd``` layout contains all necessary components like menu, access controller, auth middleware, snackbar, sweetAlert, etc.
 you can use this layout for your crud pages.
-```js[admin/customers/index.vue]
+```js[admin/index.vue]
 <template>
-    <list-page />
+    your dashboard
 </template>
 <script>
 
 export default {
-    layout: 'vsdDashboard'
+    layout: 'vsd'
 }
 </script>
 ```
 
 
 <alert type="warning">
-this layout contains auth middleware, so you should config auth module before using this layout.
+this layout contains "auth" middleware, so you should config auth module before using this layout.
 </alert>
-
-#### 2- vsdAuth 
-```vsdAuth``` is another layout. you can create your own login/register/forget pages if you want. but if you want something "ready to use", consider this layout.
- you can use this layout with ```VsdLogin``` component to have this nice login page.
- 
- 
-![vsd-login](/content/login.png)
- 
-```js[admin/auth/index.vue]
-<template>
-  <vsdLogin />
-</template>
-<script>
-  export default {
-    layout: 'vsdAuth',
-    head() {
-      return {
-        title: 'Login Page'
-      }
-    },
-  }
-</script>
-
-```
