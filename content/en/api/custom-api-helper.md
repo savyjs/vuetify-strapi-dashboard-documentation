@@ -23,7 +23,7 @@ in module config you can set ```apiListHelper```.
 apiListHelper: require('./modules/custom/apiListHelper.js').default,
 }
 ```
-you can look at [strapi.js](https://github.com/savyir/vuetify-strapi-dashboard/blob/master/src/components/common-ssr/strapi.js) file
+you can look at [strapi.js](https://github.com/savyjs/vuetify-strapi-dashboard/blob/master/src/components/common-ssr/strapi.js) file
 
 in ```apiListHelper.js```:
 
@@ -34,7 +34,7 @@ in ```apiListHelper.js```:
 ### form helper
 
 if you want to create or edit an item, you can add your own apiHelper by setting ```apiFormHelper``` property in module options.  
-property the key is ```apiFormHelper```. for more information look at you can look at [strapi.js](https://github.com/savyir/vuetify-strapi-dashboard/blob/master/src/components/common-ssr/formData/strapi.js) file
+property the key is ```apiFormHelper```. for more information look at you can look at [strapi.js](https://github.com/savyjs/vuetify-strapi-dashboard/blob/master/src/components/common-ssr/formData/strapi.js) file
 ```js[apiFormPage.js]
 
 export default {
