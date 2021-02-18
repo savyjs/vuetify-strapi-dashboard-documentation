@@ -33,4 +33,19 @@ in `~pages` folder create your CRUD directory. for example create a folder calle
 | api  | (optional) if backend is not strapi it is useful. you can access yo this property in loadData() method. |  `customers`  |
 | icon  |   |   |   |
 | resource  |   |   |   |
-| resource  |   |   |   |
+| color  |   |   |   |
+| popTitle  |   |   |   |
+| sortable  |   |   |   |
+| filterable  |   |   |   |
+| searchQuery  |   |   |   |
+| deleteAll  |   |   |   |
+| newItem  |   |   |   |
+| editItem  |   |   |   |
+| headerIcon  |   |   |   |
+| showSimple  |   |   |   |
+| showBack  | showing back buttons |   |   |
+| defaultActions  | add default actions column |   |   |
+
+## show simple 
+true means disabled VCardHeader on form pages
+

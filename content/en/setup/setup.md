@@ -41,13 +41,18 @@ Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 ```js[nuxt.config.js]
 {
   modules: [
-    ['vuetify-strapi-dashboard'
-      rtl: true, // default: i18n.dir or false
-      apiHelper: require('./modules/vsd/api').default,
-      validations: require('./modules/vsd/validations').default,
-      config: require('./modules/vsd/config').default,
-      settings: require('./modules/vsd/settings').default,
-      menu: require('./modules/vsd/menu').default
+    ['vuetify-strapi-dashboard',
+	{
+        rtl: true,
+        lang: 'fa',
+        apiListHelper: require('./modules/crypto/api').default,
+        apiEditHelper: require('./modules/crypto/api').default,
+        apiShowHelper: require('./modules/crypto/api').default,
+        validations: require('./modules/crypto/validations').default,
+        config: require('./modules/crypto/config').default,
+        settings: require('./modules/crypto/settings').default,
+        menu: require('./modules/crypto/menu').default
+      }
     ]
   ],
 }
