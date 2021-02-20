@@ -1,7 +1,7 @@
 ---
 title: Dashboard 
 description: ''
-position: 2
+position: 6
 category: 'Pages'
 ---
 ## layouts

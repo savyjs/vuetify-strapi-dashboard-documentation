@@ -1,7 +1,7 @@
 ---
 title: Drawer (Side Menu)
 description: ''
-position: 2
+position: 12
 category: Components
 ---
 

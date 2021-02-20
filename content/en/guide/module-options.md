@@ -1,7 +1,7 @@
 ---
 title: Module Options
 description: ''
-position: 1
+position: 9
 category: Guide
 ---
 
