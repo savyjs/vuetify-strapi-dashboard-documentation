@@ -2,7 +2,7 @@
 title: Introduction
 description: ''
 position: 1
-category: ''
+category: 'Introduction'
 features:
   - advanced CRUD matched with Strapi 
   - set up crud Table, Froms, Show Pages with 2 json files

@@ -1,11 +1,10 @@
 ---
-title: dateTime
+title: date
 description: ''
 position: 11
 category: 'Form Elements'
 ---
 
 ## Introduction
-this element is a combination of ```datepicker``` and ```timepicker```
 
 ## filter field
