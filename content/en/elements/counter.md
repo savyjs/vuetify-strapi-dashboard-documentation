@@ -1,5 +1,5 @@
 ---
-title: datePicker
+title: counter
 description: ''
 position: 11
 category: 'Form Elements'
@@ -7,18 +7,18 @@ category: 'Form Elements'
 
 ## component
 ```vue
-<date-picker v-model="dateTime" label="label"/>
+<counter v-model="value" label="label"/>
 ```
 
 ## field
 
-you can set ```type: "date"``` in ```fields.js```.
+you can set ```type: "counter"``` in ```fields.js```.
 
 ```js[fields.js]
 export default {
-    type: 'date', 
-    value: 'created_at',
-    text: 'Created At'
+    type: 'counter', 
+    value: 'counts',
+    text: 'total items'
 }
 ```
 
