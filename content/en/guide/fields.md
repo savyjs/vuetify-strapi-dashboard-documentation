@@ -6,30 +6,30 @@ category: Guide
 
 ---
 
-# fields.json
+## fields.json
 
-# table fields
+## table fields
 
-# create page
+## create page
 
-# edit page
+## edit page
 
-# show page
+## show page
 
-# pop up
+## pop up
 
-# expansion on table
+## expansion on table
 
-# types
+## types
 
-# server and relational fields
+## server and relational fields
 
-# store
+## store
 
-# enum 
+## enum 
 
-# custom components
+## custom components
 
-# numeric fields
+## numeric fields
 
-# actions
+## actions

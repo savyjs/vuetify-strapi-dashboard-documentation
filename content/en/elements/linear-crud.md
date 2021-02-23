@@ -1,25 +1,25 @@
 ---
-title: CRUD
+title: linearCRUD
 description: ''
 position: 11
 category: 'Form Elements'
 ---
 
 ## Introduction
-this is a component that create a CRUD as a field.
+this is a component that create a CRUD as a field. this is like CRUD but different in view.
 
 ## component
 ```vue
-<CRUD v-model="data" label="items"/>
+<linearCrud v-model="data" label="items"/>
 ```
 
 ## field
-you can set ```type: "crud"``` in ```fields.js```.
+you can set ```type: "linearCrud"``` in ```fields.js```.
 
 ```js[fields.js]
 export default {
     text: 'Items',
-    type: 'crud',
+    type: 'linearCrud',
     meta: [
         ...fields, // array of json fields
     ],
