@@ -1,5 +1,5 @@
 ---
-title: boolean Button
+title: boolean button
 description: ''
 position: 11
 category: 'Form Elements'

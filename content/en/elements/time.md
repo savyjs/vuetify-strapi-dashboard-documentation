@@ -1,5 +1,5 @@
 ---
-title: timePicker
+title: time picker
 description: ''
 position: 11
 category: 'Form Elements'

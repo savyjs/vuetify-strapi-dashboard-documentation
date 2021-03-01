@@ -1,5 +1,5 @@
 ---
-title: Calculate Field
+title: calculate field
 description: ''
 position: 11
 category: 'Form Elements'

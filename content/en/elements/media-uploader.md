@@ -1,5 +1,5 @@
 ---
-title: mediaUploader
+title: media uploader
 description: ''
 position: 11
 category: 'Form Elements'

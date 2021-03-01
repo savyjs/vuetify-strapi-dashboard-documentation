@@ -1,5 +1,5 @@
 ---
-title: selectPhoto
+title: select photo
 description: ''
 position: 11
 category: 'Form Elements'

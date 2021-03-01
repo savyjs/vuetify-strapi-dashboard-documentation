@@ -1,5 +1,5 @@
 ---
-title: linearCRUD
+title: linear CRUD
 description: ''
 position: 11
 category: 'Form Elements'

@@ -1,5 +1,5 @@
 ---
-title: creating CRUD
+title: Creating CRUD
 description: ''
 position: 7
 category: Guide
@@ -16,11 +16,20 @@ in `~pages` folder create your CRUD directory. for example create a folder calle
 -- index.vue -> table
 -- config.vue -> CRUD config
 -- fields.js -> fields config
+-- create.vue -> create new item page
+-- _id.vue -> show item page
+-- edit/_id.vue -> edit item page
 ```
 ## config.js
-
+when you create a CRUD, there is some options that are common between pages.
+an example of this config:
 ```js['config.js']
-
+export default {
+title: "Customers", 
+resource: "customers", // API resource endpoint
+icon: "account",
+...
+}
 ```
 
 ## properties

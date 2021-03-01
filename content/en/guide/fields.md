@@ -1,5 +1,5 @@
 ---
-title: config Fields
+title: Config Fields
 description: ''
 position: 8
 category: Guide

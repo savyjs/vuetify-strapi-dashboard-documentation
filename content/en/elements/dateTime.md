@@ -1,5 +1,5 @@
 ---
-title: dateTimePicker
+title: date time picker
 description: ''
 position: 11
 category: 'Form Elements'

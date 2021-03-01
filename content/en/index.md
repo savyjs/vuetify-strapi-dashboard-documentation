@@ -15,6 +15,9 @@ features:
 [Strapi](https://strapi.io) is a powerful Headless CMS, but it is designed for developers. your customers need a better UI. [Vuetify](vuetifyjs.com) is a greate UI kit to create beautiful dashboard systems.
 VSD (Vuetify Strapi Dashboard) is a set of UI components for creating beautiful a dashboard or CRM for your customers.
 
+## professional yet very fast developing
+the main reason why we combined Nuxt Vuetify and Strapi is that we as programmers need powerful and popular frameworks to have safe and professional panels. but when it comes to business, time is everything. with `VSD` both professional stack and fast developing are met.
+
 ## Features
 
 <list :items="features"></list>
