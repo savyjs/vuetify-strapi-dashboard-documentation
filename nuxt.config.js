@@ -1,6 +1,9 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
+    head:{
+        script:[{src:'/crisp.js'}]
+    },
     buildModules: [
         '@nuxtjs/google-analytics'
     ],
