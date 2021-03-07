@@ -45,6 +45,12 @@ Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 	{
         rtl: true,
         lang: 'fa',
+        builder:{
+          form: '/forms',
+          group: '/groups',
+          element: '/elements',
+          record: '/records',
+        },
         apiListHelper: require('./modules/crypto/api').default,
         apiEditHelper: require('./modules/crypto/api').default,
         apiShowHelper: require('./modules/crypto/api').default,
