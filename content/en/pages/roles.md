@@ -15,7 +15,7 @@ but we want our customers to be in VSD dashboard. so our strategy is like this:
 1- developers can manage roles and permissions in both VSD (if they want) and in Strapi panel 2- our customer (site
 owner) can edit roles and permissions with VSD and don't have access to Strapi panel.
 
-## role folder
+## list of roles
 
 create a folder (route) for role management like following:
 
@@ -165,7 +165,7 @@ your role list page should be like this
 
 ![roles in vsd](/content/roles.png)
 
-## create or edit roles
+## create/edit a role permissions
 
 First, you need to create these files for edit/create roles.
 
@@ -322,12 +322,35 @@ export default {
 }
 ```
 
-if you need to filter some rules just add them in ```deniedRoles``` and if you want to show a different name for a rule
+if you need to filter some roles just add them in ```deniedRoles``` and if you want to show a different name for a role
 add it in ```translate``` array.
 
 the result should be like this
 ![add-role-in-vuetify-strapi-dashboard](/content/role.png)
 
-or edit role
+edit role
 
 ![add-role-in-vuetify-strapi-dashboard](/content/role-edit.png)
+
+
+## add menu 
+if you want to add roles route in menu, add this code to your menu.js file or in the ```menu``` array of vsd module options.
+```js[menu.js]
+    export default {
+        ADMIN_DRAWER: [
+            // ...
+            {
+            title: 'team', icon: 'supervised_user_circle', permission: 'user.find', link: '/admin/system/user', items: [
+                {title: 'roles', icon: 'add', link: '/admin/system/roles'}
+            ]
+        }
+```
+
+## set specific permission for menu items
+you can limit specific routes by setting permission for them.
+as you see above, you can attach the namespace of role to menu items to set access for that route.
+```js
+permission: 'user.find'
+```
+"user" is namespace of role and "find" is  its permission. in this example for ```user.*``` permissions, you should set them in Strapi panel first.
+if user doesn't have permission, both menu item and route will be hidden.
