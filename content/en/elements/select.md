@@ -6,7 +6,7 @@ category: 'Form Elements'
 ---
 
 ## Introduction
-text field is a select list that uses nuxt store or strapi collections. 
+text element show a select list. items could be from store state or server API. if you want to load items from defined array, look at [enum element](/elements/enum) 
 
 ## component
 
@@ -33,6 +33,7 @@ export default {
     store: 'roles'
 }
 ```
+
 ## server 
 you can load select options dynamically from server. for example, you may need load user groups from 'http://URL/groups' endpoint.
 this option let you load and define options from API. when your VSD loads first time, your api options will save in store. (state path: `commonSelect.server` ). 

@@ -1,12 +1,12 @@
 ---
-title: Enum Select
+title: enum select
 description: ''
 position: 11
 category: 'Form Elements'
 ---
 
 ## Introduction
-text field is a select list that uses nuxt store or strapi collections. 
+text element represent a select list from defined array. if you want to load items from store or api server look at [select element](/elements/select).
 
 ## component
 
@@ -15,7 +15,7 @@ text field is a select list that uses nuxt store or strapi collections.
 ```
 
 ## name
-you can set ```type: "select"``` in ```fields.js``` for having select field in your CRUD.
+you can set ```type: "enum"``` in ```fields.js``` for having enum select element your CRUD.
 
 example:
 ```js[fields.js]
