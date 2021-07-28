@@ -1,5 +1,8 @@
 ---
-title: Users description: 'creating users with strapi and vsd' position: 6 category: 'Pages'
+title: Users 
+description: 'managing users with vsd' 
+position: 6 
+category: 'Pages'
 ---
 
 ## strapi user system
@@ -197,18 +200,16 @@ your users list should be like this
 ![users in vsd](/content/users.png)
 
 ## create user
- 
+
+create following file in users folder (or whenever you want):
 ```shell
 -- /admin/system/users/create.vue
 ```
 
-put these code in ```_id.vue``` file:
+put this code in ```create.vue``` file:
 
-```vue[_id.vue]
-<script>
-  import form from '../create'
-  export default form
-</script>
+```vue[create.vue]
+
 ```
 
 and this code in ```create.vue```:

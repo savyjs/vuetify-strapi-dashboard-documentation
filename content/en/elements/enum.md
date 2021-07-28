@@ -15,7 +15,7 @@ text field is a select list that uses nuxt store or strapi collections.
 ```
 
 ## name
-you can set ```type: "select"``` in ```fields.js``` for having text field in your CRUD.
+you can set ```type: "select"``` in ```fields.js``` for having select field in your CRUD.
 
 example:
 ```js[fields.js]
