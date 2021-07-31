@@ -54,10 +54,10 @@ export default {
 ```js[config.js]
 export default {
   title: 'Roles',
-  resource: 'users-permissions/roles', // path on nuxt project
+  resource: 'users-permissions/roles',
   icon: "shield",
-  name: '/admin/system/roles', // custom name
-  api: 'roles', // custom name
+  name: '/admin/system/roles',
+  api: 'roles',
   popTitle: 'Role',
   popWidth: '1120',
   color: 'success darken-4',
@@ -93,35 +93,31 @@ export default [
   {
     text: 'title',
     value: 'name',
-    type: 'text', // textarea bool img rich price date
+    type: 'text',
     header: true,
     table: true,
     show: true,
     pop: true,
     edit: true,
-    align: 'start', // end
+    align: 'start',
     sortable: true,
     searchable: true,
     filterable: true,
-    colFilter: true, // true,
-    role: '', // null
-    permission: '', // null
+    colFilter: true,
   },
   {
     text: 'type',
     value: 'type',
-    type: 'text', // textarea bool img rich price date
+    type: 'text',
     header: true,
     show: true,
     pop: true,
     edit: true,
-    align: 'start', // end
+    align: 'start',
     sortable: true,
     searchable: true,
     filterable: true,
-    colFilter: true, // true,
-    role: '', // null
-    permission: '', // null
+    colFilter: true
   },
   {
     text: 'description',
@@ -310,6 +306,90 @@ export default {
 }
 </script>
 ```
+## fields and config
+
+put this code in `fields.js` 
+
+```js[fields.js]
+export default [
+  {
+    text: 'id',
+    align: 'start',
+    sortable: true,
+    value: 'id',
+    header: false,
+    edit: false,
+    show: true,
+    filterable: true,
+    type: 'text',
+    searchable: true,
+  },
+  {
+    text: 'title',
+    value: 'name',
+    type: 'text',
+    header: true,
+    table: true,
+    show: true,
+    pop: true,
+    edit: true,
+    align: 'start',
+    sortable: true,
+    searchable: true,
+    filterable: true,
+    colFilter: true
+  },
+  {
+    text: 'type',
+    value: 'type',
+    type: 'text',
+    header: true,
+    show: true,
+    pop: true,
+    edit: true,
+    align: 'start', 
+    sortable: true,
+    searchable: true,
+    filterable: true,
+    colFilter: true
+  },
+  {
+    text: 'description',
+    value: 'description',
+    show: true,
+    header: false,
+    expand: false,
+    pop: true,
+    filterable: false,
+    type: 'textarea',
+    align: 'center'
+  },
+  {
+    text: 'users',
+    value: 'nb_users',
+    show: true,
+    header: false,
+    edit: false,
+    expand: false,
+    pop: true,
+    filterable: false,
+    type: 'text',
+    align: 'center'
+  },
+  {
+    text: '',
+    filterable: false,
+    value: 'actions',
+    show: false,
+    edit: false,
+    sortable: false,
+    searchable: false,
+    align: 'left'
+  },
+]
+
+
+```
 
 for permissionConfig file:
 
@@ -333,7 +413,7 @@ edit role
 ![add-role-in-vuetify-strapi-dashboard](/content/role-edit.png)
 
 
-## add menu 
+## add to menu 
 if you want to add roles route in menu, add this code to your menu.js file or in the ```menu``` array of vsd module options.
 ```js[menu.js]
     export default {

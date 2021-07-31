@@ -62,7 +62,7 @@ for example, we loaded roles from store:
     store: 'roles',
     meta:{
       text: 'text',
-      value: 'value'
+      value: 'id'
     },
   },
   // ...
