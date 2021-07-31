@@ -17,7 +17,7 @@ v-model="formData"
 ```
 
 ## config
-see [process config](/builder/process) for details.
+check out [process config](/builder/process) for more details.
 
 ## props
 - v-model 

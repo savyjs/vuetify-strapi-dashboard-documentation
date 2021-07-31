@@ -12,10 +12,14 @@ the original idea of this component came from "Fabrik", a joomla component for c
 this VSD component has 3 levels:
 
 ### 1- forms
-a form is first level of creating a process. each form should contain at least one group. 
-each form has own records. for example, if you want an advanced form for adding your customers, your form is user and all registered users will be shown in that table.
+a form is the first level of creating a process. each form should contain at least one group and has its own records. for example, if you want an advanced form for adding your customers,
+your form is "user" and all registered users will be shown within the users table.
 
-![form]()
+form
+
+
+records
+![form](/content/form-vsd.png)
 
 ### 2- groups
 groups are between forms and elements. a group is a set of some elements.
