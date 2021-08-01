@@ -4,18 +4,24 @@ description: ''
 position: 1
 category: 'Introduction'
 features:
-  - advanced CRUD matched with Strapi 
-  - set up crud Table, Forms, Show Pages with 2 json files
-  - menu, Sidebar and beautiful loaders
-  - match with custom APIs easily
+  - advanced, easy and fast dashboard ,matched with Strapi 
+  - auth and role-permissions system (strapi)
+  - add CRUDs, Tables, Forms, custom Pages with JSON files
+  - menu, sidebar and beautiful loaders
+  - connect to your custom API easily
+  - enable/disable installed popular modules and libraries (i18n, auth, sweet-alert, lodash, ...)
+  - sync with last version of Strapi and Vuetify
 ---
 [![nuxt vuetify strapi dashboard](/banner.png)](https://vsd.savy.ir)
 
-# Introduction - Advanced Vuetify Dashboard 
+# Advanced Dashboard 
 [Strapi](https://strapi.io) is a powerful Headless CMS, but it is designed for developers. your customers need a better UI. [Vuetify](vuetifyjs.com) is a great UI kit to create beautiful dashboard systems.
-VSD (Vuetify Strapi Dashboard) is a set of UI components for creating beautiful a dashboard or CRM for your customers.
+
+VSD (Vuetify Strapi Dashboard) is a [Nuxt js](https://nuxtjs.org) module, a set of UI components for creating beautiful a dashboard or CRM for your customers.
 
 [Start Here](/setup/setup)
+
+![nuxt vuetify strapi dashboard](/content/group-2.png)
 
 ## professional and fast developing
 the main reason why we combined Nuxt Vuetify and Strapi is that we as programmers need powerful and popular frameworks to have safe and professional panels. 
@@ -28,6 +34,19 @@ when you have just 1 month to use your energy and willpower to build a system fo
 ## systems and businesses
 systems are key. you design your business system and work on it, then you wait for right time to make a lot of money without that much work
 
+you can use VSD for these purposes:
+- ERP systems
+- Blogs and podcasts
+- Automation systems
+- CRMs
+- PRs
+- Online shops
+- B2B businesses
+and any kind of dashboard!
+
+
+
+![nuxt vuetify strapi dashboard](/content/filter-table.png)
 
 ## Features
 <list :items="features"></list>
