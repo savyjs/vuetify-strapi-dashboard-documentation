@@ -11,6 +11,7 @@ position: 1 category: 'Introduction' features:
 - sync with last version of Strapi and Vuetify
 
 ---
+
 [![nuxt vuetify strapi dashboard](/banner.png)](https://vsd.savy.ir)
 <div style="display: inline-flex">
 ![installs](https://img.shields.io/npm/dt/vuetify-strapi-dashboard?color=green&label=install&logo=npm&style=flat)
