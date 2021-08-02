@@ -1,21 +1,21 @@
 ---
-title: Setup
+title: Setup 
 description: ''
-position: 2
+position: 2 
 category: Setup
 ---
 
 ## Requirements
 
 - [Nuxtjs](https://vnuxtjs.org)
-- [Vuetify module](https://vuetify.nuxtjs.org) 
+- [Vuetify module](https://vuetify.nuxtjs.org)
 - [Axios module](https://axios.nuxtjs.org)
 
 <alert>
 you should install and config vuetify and axios before using this module.
 </alert>
 
-##  Installation
+## Installation
 
 Add `vuetify-strapi-dashboard` dependency to your project:
 
@@ -41,33 +41,50 @@ Then add `vuetify-strapi-dashboard` to the `modules` in `nuxt.config.js`:
 ```js[nuxt.config.js]
 {
   modules: [
-    ['vuetify-strapi-dashboard',
-	{
-        rtl: true,
-        lang: 'fa',
-        builder:{
-          form: '/forms',
-          group: '/groups',
-          element: '/elements',
-          record: '/records',
-        },
-        apiListHelper: require('./modules/crypto/api').default,
-        apiEditHelper: require('./modules/crypto/api').default,
-        apiShowHelper: require('./modules/crypto/api').default,
-        validations: require('./modules/crypto/validations').default,
-        config: require('./modules/crypto/config').default,
-        settings: require('./modules/crypto/settings').default,
-        menu: require('./modules/crypto/menu').default
-      }
-    ]
+    ['vuetify-strapi-dashboard']
   ],
 }
 ```
 
-## auth and axios config
+
+you can check out all options [here](/options/introduction). 
+
+
+## env file
+
+the list of env parameters:
+
+```dotenv[.env]
+API_URL=https://demo-api.savyjs.com
+PORT=9200
+BASE_URL=http://demo.savyjs.com:9200
+DESCRIPTION="meta description"
+KEYWORDS="meta keywords"
+TITLE="vuetify strapi dashboard"
+SINGLE_TITLE="VSD"
+FOOTER_TITLE= "VSD"
+CRM_LOGO=/crm-logo.png
+SYSTEM_LOGO=/system-logo.png # top of menu
+LOADER=true
+ENABLE_2FA=false
+SPLASH=true
+RECAPTCHAKEY=FROM_GOOGLE
+LOGIN_URL=/sms/auth
+SHOW_USER=false # crm
+```
+
+## other options 
+
+### auth and axios config
+
 recommended config for axios and auth:
+
 ```js[nuxt.config.js]
-axios: {
+const _ = require lodash;
+
+export default { 
+// ...
+  axios: {
     changeOrigin: true,
     baseURL: 'http://your-api-server-here',
     debug: false
@@ -93,4 +110,55 @@ axios: {
       home: '/admin'
     }
   },
+  // ...
+}
 ```
+
+### i18n options 
+
+create `locale` folder and these files there:
+
+```shell
+/locales/en.js
+/locales/fa.js
+```
+
+and set i18n module option in nuxt.config.js like following:
+
+```js[nuxt.config.js]
+    ['nuxt-i18n',
+      {
+        vueI18nLoader: true,
+        locales: [
+          {code: 'en', iso: 'en-US', file: 'en.js', dir: 'ltr'},
+          {code: 'fa', iso: 'fa-IR', file: 'fa.js', dir: 'rtl'}
+        ],
+        rtl: false,
+        lazy: true,
+        langDir: "locale/",
+        defaultLocale: 'en'
+      }
+    ],
+```
+
+for more information please check out [i18n module](https://i18n.nuxtjs.org)
+
+### recaptcha
+
+add this options for nuxt-recaptcha module in nuxt.config.js like following:
+
+```js[nuxt.config.js]
+...
+
+recaptcha: {
+    //language: 'fa',   // Recaptcha language (v2)
+    siteKey: process.env.RECAPTCHAKEY,    // Site key for requests
+    version: 3,     // Version
+    size: 'invisible'        // Size: 'compact', 'normal', 'invisible' (v2)
+  }
+  ...
+```
+
+check out [recaptcha module](https://github.com/nuxt-community/recaptcha-module) site for more information.
+
+

@@ -1,6 +1,9 @@
 ---
-title: Introduction description: ''
-position: 1 category: 'Introduction' features:
+title: Introduction 
+description: ''
+position: 1 
+category: 'Introduction' 
+features:
 
 - advanced, easy and fast dashboard ,matched with Strapi
 - auth and role-permissions system (strapi)
@@ -13,6 +16,7 @@ position: 1 category: 'Introduction' features:
 ---
 
 [![nuxt vuetify strapi dashboard](/banner.png)](https://vsd.savy.ir)
+
 <div style="display: inline-flex">
 ![installs](https://img.shields.io/npm/dt/vuetify-strapi-dashboard?color=green&label=install&logo=npm&style=flat)
 ![version](https://img.shields.io/npm/v/vuetify-strapi-dashboard?logo=npm&style=flat)
