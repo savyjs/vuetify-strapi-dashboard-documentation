@@ -3,6 +3,7 @@ title: Introduction
 description: ''
 position: 1 
 category: 'Introduction' 
+
 features:
 
 - advanced, easy and fast dashboard ,matched with Strapi
@@ -17,10 +18,8 @@ features:
 
 [![nuxt vuetify strapi dashboard](/banner.png)](https://vsd.savy.ir)
 
-<div style="display: inline-flex">
 ![installs](https://img.shields.io/npm/dt/vuetify-strapi-dashboard?color=green&label=install&logo=npm&style=flat)
 ![version](https://img.shields.io/npm/v/vuetify-strapi-dashboard?logo=npm&style=flat)
-</div>
 
 # Advanced Dashboard
 
@@ -32,13 +31,19 @@ a dashboard or CRM for your customers.
 
 [Start Here](/setup/setup)
 
-![nuxt vuetify strapi dashboard](/content/group-2.png)
+<div style="text-align: center">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/8Xc9jMwDRGY"></iframe>
+</div>
 
 ## professional and fast developing
 
 the main reason why we combined Nuxt Vuetify and Strapi is that we as programmers need powerful and popular frameworks
 to have safe and professional panels. when it comes to business, time is everything. with `VSD` both professional stack
 and fast developing are met.
+
+
+![nuxt vuetify strapi dashboard](/content/group-2.png)
+
 
 ## time saving
 

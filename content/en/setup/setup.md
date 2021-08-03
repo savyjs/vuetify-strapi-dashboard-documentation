@@ -17,6 +17,8 @@ you should install and config vuetify and axios before using this module.
 
 ## Installation
 
+
+
 Add `vuetify-strapi-dashboard` dependency to your project:
 
 <code-group>
@@ -55,9 +57,9 @@ you can check out all options [here](/options/introduction).
 the list of env parameters:
 
 ```dotenv[.env]
-API_URL=https://demo-api.savyjs.com
+API_URL=https://YOUR-API-URL-HERE
 PORT=9200
-BASE_URL=http://demo.savyjs.com:9200
+BASE_URL=http://YOUR-NUXT-PORT
 DESCRIPTION="meta description"
 KEYWORDS="meta keywords"
 TITLE="vuetify strapi dashboard"
@@ -70,7 +72,7 @@ ENABLE_2FA=false
 SPLASH=true
 RECAPTCHAKEY=FROM_GOOGLE
 LOGIN_URL=/auth/local
-SHOW_USER=false # crm
+SHOW_USER=false
 ```
 
 ## other options 
