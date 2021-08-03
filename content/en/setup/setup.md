@@ -69,7 +69,7 @@ LOADER=true
 ENABLE_2FA=false
 SPLASH=true
 RECAPTCHAKEY=FROM_GOOGLE
-LOGIN_URL=/sms/auth
+LOGIN_URL=/auth/local
 SHOW_USER=false # crm
 ```
 
@@ -106,7 +106,7 @@ export default {
     redirect: {
       login: '/admin/auth',
       logout: '/admin/system/profile/logout',
-      callback: '/admin/login',
+      callback: '/admin/auth',
       home: '/admin'
     }
   },
