@@ -121,8 +121,8 @@ export default {
 create `locale` folder and these files there:
 
 ```shell
-/locales/en.js
-/locales/fa.js
+/locale/en.js
+/locale/fa.js
 ```
 
 and set i18n module option in nuxt.config.js like following:
@@ -153,7 +153,6 @@ add this options for nuxt-recaptcha module in nuxt.config.js like following:
 ...
 
 recaptcha: {
-    //language: 'fa',   // Recaptcha language (v2)
     siteKey: process.env.RECAPTCHAKEY,    // Site key for requests
     version: 3,     // Version
     size: 'invisible'        // Size: 'compact', 'normal', 'invisible' (v2)

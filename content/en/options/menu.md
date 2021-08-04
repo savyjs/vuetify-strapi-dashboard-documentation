@@ -59,7 +59,7 @@ export default {
 ```js[menu.js]
 export default {
   NAVBAR: [
-    {title: 'home', permission: "example.find", icon: 'home', link: '/', target: '_blank'},
+    {title: 'home', icon: 'home', link: '/', target: '_blank'},
     {
       title: 'example', icon: 'add', items: [
         {title: 'all', permission: "example.find", icon: 'link', link: '/admin/example'},

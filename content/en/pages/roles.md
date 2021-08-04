@@ -36,7 +36,6 @@ import fields from "./fields";
 import config from "./config";
 
 export default {
-  layout: 'admin',
   created() {
   },
   data() {
@@ -287,7 +286,7 @@ export default {
       let data = _.cloneDeep(this.formData);
       console.log({data})
       this.$axios.$request({method, url, data}).then(res => {
-        this.$notifSuccess($t('saved_successfully'));
+        this.$notifSuccess(this.$t('saved_successfully'));
         this.$router.push(back)
       }).catch(err => {
         if (err.errors) {

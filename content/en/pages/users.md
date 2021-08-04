@@ -204,12 +204,44 @@ your users list should be like this
 create following file in users folder (or whenever you want):
 
 ```shell
+-- /admin/system/users/edit/_id.vue
 -- /admin/system/users/create.vue
 ```
 
-put this code in ```create.vue``` file:
+put this code in ```edit/_id.vue``` file:
 
-```vue[create.vue]
+```vue[_id.vue]
+<template>
+  <data-form-page
+    v-model="main"
+    :id="id"
+  />
+</template>
+<script>
+import Fields from "../fields";
+import Info from "../config";
+
+export default {
+  head() {
+    return {
+      title: Info.title
+    }
+  },
+  data() {
+    return {
+      id: undefined,
+      main: {
+        data: {},
+        fields: Fields,
+        ...Info,
+      }
+    }
+  },
+  async asyncData({params}) {
+    return {id: params.id}
+  }
+}
+</script>
 
 ```
 
