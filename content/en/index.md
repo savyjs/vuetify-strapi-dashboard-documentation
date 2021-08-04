@@ -29,7 +29,7 @@ UI. [Vuetify](vuetifyjs.com) is a great UI kit to create beautiful dashboard sys
 VSD (Vuetify Strapi Dashboard) is a [Nuxt js](https://nuxtjs.org) module, a set of UI components for creating beautiful
 a dashboard or CRM for your customers.
 
-[Start Here](/setup/setup)
+[Start Here](/setup/setup) or check out [demo source](https://github.com/savyjs/vsd-demo-front)
 
 <div style="text-align: center">
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/8Xc9jMwDRGY"></iframe>
