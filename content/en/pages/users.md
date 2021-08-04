@@ -47,6 +47,8 @@ export default {
 
 ```
 
+
+## config.js
 ```js[config.js]
 const config = {
   title: 'users',
@@ -56,6 +58,8 @@ const config = {
 export default config;
 ```
 
+
+## fields.js
 for fields
 
 ```js[fields.js]
@@ -316,16 +320,6 @@ put this code in ```_id.vue```:
   }
 </script>
 
-```
-
-for config file:
-
-```js[config.js]
-export default {
-  title: 'users',
-  resource: 'users',
-  name: '/admin/system/users',
-}
 ```
 
 ## add to menu
