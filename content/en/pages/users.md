@@ -130,8 +130,7 @@ export default [
     value: 'role',
     type: 'select', // textarea bool img rich price date
     meta: {
-      path: 'name',
-      text: 'name',
+      text: 'text',
       value: 'id'
     },
     store: 'roles',
@@ -199,14 +198,17 @@ your users list should be like this
 
 ![users in vsd](/content/users.png)
 
-## create user
+## manage user
 
 create following file in users folder (or whenever you want):
 
 ```shell
 -- /admin/system/users/edit/_id.vue
 -- /admin/system/users/create.vue
+-- /admin/system/users/_id.vue
 ```
+
+### edit user
 
 put this code in ```edit/_id.vue``` file:
 
@@ -245,6 +247,7 @@ export default {
 
 ```
 
+### create user
 put this code in ```create.vue```:
 
 ```vue[create.vue]
@@ -273,6 +276,44 @@ export default {
     }
   }
 }
+</script>
+
+```
+
+### show user
+put this code in ```_id.vue```:
+
+```vue[create.vue]
+<template>
+  <show-page
+    :id="id"
+    v-model="main"
+  />
+</template>
+<script>
+  import Fields from "./fields";
+  import Info from "./config";
+
+  export default {
+    head() {
+      return {
+        title: Info.title
+      }
+    },
+    data() {
+      return {
+        id: undefined,
+        main: {
+          data: {},
+          fields: Fields,
+          ...Info
+        }
+      }
+    },
+    async asyncData({params}) {
+      return {id: params.id}
+    }
+  }
 </script>
 
 ```
