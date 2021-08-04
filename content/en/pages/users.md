@@ -5,6 +5,12 @@ position: 6
 category: 'Pages'
 ---
 
+
+<div style="text-align: center">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/35wiwfygVyI"></iframe>
+</div>
+
+
 ## strapi user system
 
 [look at this](https://strapi.io/documentation/user-docs/latest/users-roles-permissions/introduction-to-users-roles-permissions.html)
@@ -134,7 +140,7 @@ export default [
     value: 'role',
     type: 'select', // textarea bool img rich price date
     meta: {
-      text: 'text',
+      text: 'name',
       value: 'id'
     },
     store: 'roles',

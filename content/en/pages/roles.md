@@ -5,6 +5,11 @@ position: 6
 category: 'Pages'
 ---
 
+<div style="text-align: center">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/NTKDhIq2IcE"></iframe>
+</div>
+
+
 ## strapi role and permission system
 
 [look at this](https://strapi.io/features/custom-roles-and-permissions) if you are not familiar with Strapi role based
