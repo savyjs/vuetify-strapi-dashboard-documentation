@@ -1,6 +1,6 @@
 ---
-title: API helper
-description: ''
+title: API integration
+description: 'integrating custom API web services to dashboard'
 position: 13
 category: API Helpers
 ---

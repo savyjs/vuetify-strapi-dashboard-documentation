@@ -17,6 +17,8 @@ you can set ```type: "date"``` in ```fields.js```.
 ```js[fields.js]
 export default {
     type: 'date', 
+    meta: 'YYYY/M/D', 
+    jalali: false, 
     value: 'created_at',
     text: 'Created At'
 }

@@ -50,6 +50,7 @@ icon: "account",
 | deleteAll  |   |   |   |
 | newItem  |   |   |   |
 | editItem  |   |   |   |
+| redirectAfterSave  |  redirect to show page after saving new item |   |   |
 | headerIcon  |   |   |   |
 | showSimple  |   |   |   |
 | showBack  | showing back buttons |   |   |
