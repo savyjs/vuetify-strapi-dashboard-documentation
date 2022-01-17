@@ -5,6 +5,7 @@ position: 2.52
 category: Options
 ---
 
+
 ## module option
 you can set `menu` property in `nuxt.config.js` like following:
 
